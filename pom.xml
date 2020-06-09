@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+			    http://maven.apache.org/maven-v4_0_0.xsd">
+	<groupId>com.github.nikita36078</groupId>
+	<artifactId>mobile-ffmpeg</artifactId>
+	<version>v4.3.3-compact</version>
+</project>
