@@ -353,46 +353,22 @@ ulimit -n 2048 1>>${BASEDIR}/build.log 2>&1
     --cxx="${CXX}" \
     --target-os=android \
     ${ASM_FLAGS} \
+    --disable-everything \
     --enable-cross-compile \
     --enable-pic \
     --enable-jni \
     --enable-optimizations \
-    --enable-swscale \
     --enable-shared \
-    --enable-v4l2-m2m \
-    --disable-outdev=fbdev \
-    --disable-indev=fbdev \
     ${SIZE_OPTIONS} \
-    --disable-openssl \
-    --disable-xmm-clobber-test \
     ${DEBUG_OPTIONS} \
-    --disable-neon-clobber-test \
-    --disable-programs \
-    --disable-postproc \
-    --disable-doc \
-    --disable-htmlpages \
-    --disable-manpages \
-    --disable-podpages \
-    --disable-txtpages \
-    --disable-static \
-    --disable-sndio \
-    --disable-schannel \
-    --disable-securetransport \
-    --disable-xlib \
-    --disable-cuda \
-    --disable-cuvid \
-    --disable-nvenc \
-    --disable-vaapi \
-    --disable-vdpau \
-    --disable-videotoolbox \
-    --disable-audiotoolbox \
-    --disable-appkit \
-    --disable-alsa \
-    --disable-cuda \
-    --disable-cuvid \
-    --disable-nvenc \
-    --disable-vaapi \
-    --disable-vdpau \
+    --enable-protocol=file \
+    --enable-muxer=wav \
+    --enable-demuxer=mmf \
+    --enable-demuxer=wav \
+    --enable-decoder=adpcm_ima_wav \
+    --enable-decoder=adpcm_yamaha \
+    --enable-encoder=pcm_u8 \
+    --enable-filter=aresample \
     ${CONFIGURE_POSTFIX} 1>>${BASEDIR}/build.log 2>&1
 
 if [ $? -ne 0 ]; then
